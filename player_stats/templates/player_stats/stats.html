@@ -1,0 +1,59 @@
+<!-- player_stats/templates/player_stats/stats.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ elly_stats.player_name }} 2025 Stats</title>
+</head>
+<body>
+    <h1>{{ elly_stats.player_name }} - {{ elly_stats.season }} Stats</h1>
+    <table border="1">
+        <tr>
+            <th>Games Played</th>
+            <th>At Bats</th>
+            <th>Hits</th>
+            <th>Home Runs</th>
+            <th>RBIs</th>
+            <th>Stolen Bases</th>
+            <th>Walks</th>
+            <th>Strikeouts</th>
+            <th>Doubles</th>
+            <th>Triples</th>
+            <th>OBP</th>
+            <th>SLG</th>
+            <th>OPS</th>
+            <th>ISO</th>
+            <th>BABIP</th>
+            <th>wOBA</th>
+            <th>xwOBA</th>
+            <th>Barrel %</th>
+            <th>Hard Hit %</th>
+            <th>Avg Exit Velocity</th>
+        </tr>
+        <tr>
+            <td>{{ elly_stats.games_played }}</td>
+            <td>{{ elly_stats.at_bats }}</td>
+            <td>{{ elly_stats.hits }}</td>
+            <td>{{ elly_stats.home_runs }}</td>
+            <td>{{ elly_stats.runs_batted_in }}</td>
+            <td>{{ elly_stats.stolen_bases }}</td>
+            <td>{{ elly_stats.walks }}</td>
+            <td>{{ elly_stats.strikeouts }}</td>
+            <td>{{ elly_stats.doubles }}</td>
+            <td>{{ elly_stats.triples }}</td>
+            <td>{{ elly_stats.obp }}</td>
+            <td>{{ elly_stats.slg }}</td>
+            <td>{{ elly_stats.ops }}</td>
+            <td>{{ elly_stats.iso }}</td>
+            <td>{{ elly_stats.babip }}</td>
+            <td>{{ elly_stats.woba }}</td>
+            <td>{{ elly_stats.xwoba }}</td>
+            <td>{{ elly_stats.barrel_percentage }}%</td>
+            <td>{{ elly_stats.hard_hit_percentage }}%</td>
+            <td>{{ elly_stats.avg_exit_velocity }} mph</td>
+        </tr>
+    </table>
+</body>
+</html>
