@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elly De La Cruz - 2025 Stats</title>
+</head>
+<body>
+    <h1>Elly De La Cruz - 2025 Stats</h1>
+
+    {% if elly %}
+    <table border="1">
+        <tr>
+            <th>Games Played</th>
+            <th>At Bats</th>
+            <th>Hits</th>
+            <th>Home Runs</th>
+            <th>RBIs</th>
+            <th>Stolen Bases</th>
+            <th>Walks</th>
+            <th>Strikeouts</th>
+            <th>Doubles</th>
+            <th>Triples</th>
+            <th>OBP</th>
+            <th>SLG</th>
+            <th>OPS</th>
+            <th>ISO</th>
+            <th>BABIP</th>
+            <th>wOBA</th>
+            <th>xwOBA</th>
+            <th>Barrel %</th>
+            <th>Hard Hit %</th>
+            <th>Avg Exit Velocity</th>
+        </tr>
+        <tr>
+            <td>{{ elly.games_played }}</td>
+            <td>{{ elly.at_bats }}</td>
+            <td>{{ elly.hits }}</td>
+            <td>{{ elly.home_runs }}</td>
+            <td>{{ elly.runs_batted_in }}</td>
+            <td>{{ elly.stolen_bases }}</td>
+            <td>{{ elly.walks }}</td>
+            <td>{{ elly.strikeouts }}</td>
+            <td>{{ elly.doubles }}</td>
+            <td>{{ elly.triples }}</td>
+            <td>{{ elly.obp }}</td>
+            <td>{{ elly.slg }}</td>
+            <td>{{ elly.ops }}</td>
+            <td>{{ elly.iso }}</td>
+            <td>{{ elly.babip }}</td>
+            <td>{{ elly.woba }}</td>
+            <td>{{ elly.xwoba }}</td>
+            <td>{{ elly.barrel_percentage }}%</td>
+            <td>{{ elly.hard_hit_percentage }}%</td>
+            <td>{{ elly.avg_exit_velocity }} mph</td>
+        </tr>
+    </table>
+    {% else %}
+        <p>No player stats available.</p>
+    {% endif %}
+</body>
+</html>
